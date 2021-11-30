@@ -8,6 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class InfoEndpoint {
 	@GetMapping(value = "/info.htm", produces = { MediaType.APPLICATION_JSON_VALUE })
 	public String info() {
-		return "{\"instanceId\": \"" + this.hashCode() + "\"}";
+		return "{\"speed instanceId\": \"" + this.hashCode() + "\"}";
 	}
 }
